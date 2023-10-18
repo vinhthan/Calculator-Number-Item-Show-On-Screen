@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showItem() {
         mAdapter = MainAdapter()
-        for (i in 0 until 30) {
+        for (i in 0 until 5) {
             mAdapter.listItem.add(Item("name name name name name name $i"))
         }
 

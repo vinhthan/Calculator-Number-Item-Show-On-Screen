@@ -18,7 +18,7 @@ class MainAdapter: RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
 
         val displayMetrics = DisplayMetrics()
         (parent.context as MainActivity).windowManager.defaultDisplay.getMetrics(displayMetrics)
-        screenWidth = displayMetrics.widthPixels
+        screenWidth = displayMetrics.widthPixels - 20 - 20 - 20
 
         return MainViewHolder(view)
     }
